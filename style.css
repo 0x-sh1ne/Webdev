@@ -12,36 +12,33 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*WHOLE*/
+/*WHOLE: NAVIGATION BOARD*/
 .Nav1{
     display:flex;
 }
 
-/*LEFT*/
+/*LEFT: NAVIGATION BOARD*/
 .HomeLogo{
     display: flex;
     padding: 25px 25px;
     font-size: 25px;
 }
-/*LEFT*/
+/*HOVER: LEFT: NAVIGATION BOARD*/
 .HomeLink {
     color: initial;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.HomeLink{
+.HomeLink :hover{
     color: #8A00FF;
 }
 
-
-
-
-/*RIGHT*/
+/*RIGHT: NAVIGATION*/
 .NavBar{ /*container*/
     display: flex;
     padding: 25px 25px;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .NavBar ul{ /*list*/
@@ -56,7 +53,7 @@ body{
     font-size: 25px;
 }
 
-/*RIGHT*/
+/*HOVER: RIGHT: NAVIGATION BOARD*/
 .NavBar ul li a:{
     color: initial;
     text-decoration: none;
@@ -67,4 +64,21 @@ body{
     color: #8A00FF
 }
 
+/*WHOLE: CONTENT*/
+.HomeConLay{
+    width: 100%;
+    display: flex;
+}
+.HomeMyPicture{/*picture*/
+    width: 800px;
+    position: fixed;
+}
+.HomeTextDes{/*text and picture*/
+    font-size: 24px;
+    padding-top: 10%;
+    margin-left: 600px;
+}
 
+.HomeFontShai{/*font picture*/
+    width: 500px;
+}
