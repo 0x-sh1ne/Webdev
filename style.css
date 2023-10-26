@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: #121212;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f2f2f2;
+    background-image: url('Images/Background/HomeBgVio.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*WHOLE*/
+.Nav1{
+    display:flex;
+}
+
+/*LEFT*/
+.HomeLogo{
+    display: flex;
+    padding: 25px 25px;
+    font-size: 25px;
+}
+
+/*RIGHT*/
+.NavBar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 25px;
+    font-size: 20px;
+}
+
+.NavBar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.NavBar ul li{
+    display: flex;
+    padding: 0 20px;
+}
+
+
+
