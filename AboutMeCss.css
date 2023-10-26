@@ -7,35 +7,39 @@
 }
 
 body{
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 important!;
 }
-/*WHOLE: NAVIGATION BOARD-------------------------------*/
+
+/*WHOLE*/
 .Nav1{
     display:flex;
 }
 
-/*LEFT: NAVIGATION BOARD*/
+/*LEFT*/
 .HomeLogo{
     display: flex;
     padding: 25px 25px;
     font-size: 25px;
 }
-/*HOVER: LEFT: NAVIGATION BOARD*/
+/*LEFT*/
 .HomeLink {
     color: initial;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.HomeLink :hover{
+.HomeLink{
     color: #8A00FF;
 }
 
-/*RIGHT: NAVIGATION*/
+
+
+
+/*RIGHT*/
 .NavBar{ /*container*/
     display: flex;
     padding: 25px 25px;
-    margin-left: auto;
+    justify-content: flex-end;
 }
 
 .NavBar ul{ /*list*/
@@ -50,7 +54,7 @@ body{
     font-size: 25px;
 }
 
-/*HOVER: RIGHT: NAVIGATION BOARD*/
+/*RIGHT*/
 .NavBar ul li a:{
     color: initial;
     text-decoration: none;
