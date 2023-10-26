@@ -23,25 +23,48 @@ body{
     padding: 25px 25px;
     font-size: 25px;
 }
-
-/*RIGHT*/
-.NavBar{
-    display: flex;
-    justify-content: flex-end;
-    padding: 25px 25px;
-    font-size: 20px;
+/*LEFT*/
+.HomeLink {
+    color: initial;
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
-.NavBar ul{
+.HomeLink{
+    color: #8A00FF;
+}
+
+
+
+
+/*RIGHT*/
+.NavBar{ /*container*/
+    display: flex;
+    padding: 25px 25px;
+    justify-content: flex-end;
+}
+
+.NavBar ul{ /*list*/
     display: flex;
     list-style: none;
     margin-right: 20px;
 }
 
-.NavBar ul li{
+.NavBar ul li{/*list items*/
     display: flex;
     padding: 0 20px;
+    font-size: 25px;
 }
 
+/*RIGHT*/
+.NavBar ul li a:{
+    color: initial;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.NavBar ul li a:hover{
+    color: #8A00FF
+}
 
 
