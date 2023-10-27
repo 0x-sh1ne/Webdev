@@ -132,12 +132,14 @@ header {
     margin-bottom: 20px;
     justify-content: flex-end;
 }
+
 .AMDetails2{/*details*/
     margin-top: 20px;
     font-size: 20px;
     margin-right:25px;
     justify-content: flex-end;
 }
+
 .AMDetails2 ul li{/*list items*/
     color: #121212;
     margin-top: 10px;
@@ -164,7 +166,7 @@ header {
     font-size: 300%;
     font-weight: bold;
     margin-bottom: 50px;
-    margin-top: 20px; /*adjustment*/
+    margin-top: 100px; /*adjustment*/
     margin-left: 180px;
     display: flex;
 }
@@ -185,7 +187,7 @@ header {
 
 .AMIcon2 img{/*image*/
     margin-top: 2px; /*adjustment*/
-    margin-left: 200px;
+    margin-left: 100px;
     margin-right: 50px;
     margin-bottom: 20px;
     width: 130px;
