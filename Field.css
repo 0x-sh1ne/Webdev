@@ -115,6 +115,10 @@ header {
     margin-right: 10px;
 }
 
+.FieldDetails ul li p:hover{
+    color: #8A00FF;
+}
+
 .FieldDetails ul li img{
     width: 250px;
     height: 250px;
