@@ -7,79 +7,88 @@
 }
 
 body{
-    background-color: #f2f2f2;
     background-image: url('Images/Background/HomeBgVio.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/*WHOLE: NAVIGATION BOARD-------------------------------*/
-.Nav1{
-    display:flex;
-}
+@media screen and (min-width: 0px){
+    /*WHOLE: NAVIGATION BOARD----------------*/
+    .Nav1{
+        display:flex;
+    }
+    
+    /*LEFT NAVIGATION BOARD*/
+    .HomeLogo{
+        display: flex;
+        padding: 25px 25px;
+        font-size: 25px;
+    }
+    /*HOVER:LEFT: NAVIGATION BOARD*/
+    .HomeLink {
+        color: initial;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    .HomeLink :hover{
+        color: #8A00FF;
+    }
+    
+    /*RIGHT: NAVIGATION*/
+    .NavBar{ /*container*/
+        display: flex;
+        padding: 25px 25px;
+        margin-left: auto;
+    }
+    
+    .NavBar ul{ /*list*/
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+    }
+    
+    .NavBar ul li{/*list items*/
+        display: flex;
+        padding: 0 20px;
+        font-size: 25px;
+    }
+    
+    /*HOVER: RIGHT: NAIGATION BOARD*/
+    .NavBar ul li a{
+        color: initial;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    .NavBar ul li a:hover{
+        color: #8A00FF
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
 
-/*LEFT: NAVIGATION BOARD*/
-.HomeLogo{
-    display: flex;
-    padding: 25px 25px;
-    font-size: 25px;
-}
-/*HOVER: LEFT: NAVIGATION BOARD*/
-.HomeLink {
-    color: initial;
-    text-decoration: none;
-    transition: color 0.2s;
-}
+    /*WHOLE: CONTENT------------------------------------*/
+    .HomeConLay{
+        width: 100%;
+        display: flex;
+    }
+    .HomeMyPicture{/*picture*/
+        width: 800px;
+        position: fixed;
+    }
+    .HomeTextDes{/*text and picture*/
+        font-size: 24px;
+        padding-top: 10%;
+        margin-left: 600px;
+    }
 
-.HomeLink :hover{
-    color: #8A00FF;
-}
-
-/*RIGHT: NAVIGATION*/
-.NavBar{ /*container*/
-    display: flex;
-    padding: 25px 25px;
-    margin-left: auto;
-}
-
-.NavBar ul{ /*list*/
-    display: flex;
-    list-style: none;
-    margin-right: 20px;
-}
-
-.NavBar ul li{/*list items*/
-    display: flex;
-    padding: 0 20px;
-    font-size: 25px;
-}
-
-/*HOVER: RIGHT: NAVIGATION BOARD*/
-.NavBar ul li a:{
-    color: initial;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.NavBar ul li a:hover{
-    color: #8A00FF
-}
-
-/*WHOLE: CONTENT------------------------------------*/
-.HomeConLay{
-    width: 100%;
-    display: flex;
-}
-.HomeMyPicture{/*picture*/
-    width: 800px;
-    position: fixed;
-}
-.HomeTextDes{/*text and picture*/
-    font-size: 24px;
-    padding-top: 10%;
-    margin-left: 600px;
-}
-
-.HomeFontShai{/*font picture*/
-    width: 500px;
+    .HomeFontShai{/*font picture*/
+        width: 500px;
+    }
 }

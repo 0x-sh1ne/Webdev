@@ -8,8 +8,10 @@
 
 body{
     background-color: #f2f2f2 important!;
+
 }
 
+@media screen and (min-width: 0px){
 /*WHOLE: NAVIGATION BOARD----------------*/
 .Nav1{
     display:flex;
@@ -51,8 +53,13 @@ body{
     font-size: 25px;
 }
 
+.NavColor li a{
+    color: #8A00FF;
+    text-decoration: underline color( 136 136 136);
+}
+
 /*HOVER: RIGHT: NAIGATION BOARD*/
-.NavBar ul li a:{
+.NavBar ul li a{
     color: initial;
     text-decoration: none;
     transition: color 0.2s;
@@ -60,4 +67,141 @@ body{
 
 .NavBar ul li a:hover{
     color: #8A00FF
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+/*---------------------------PART 1-----------------*/
+
+ .AMContentLay{/*whole content: text and image*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.AMImageKo img{/*image*/
+    width: 400px;
+    height: 350px;
+    border-radius: 2%;
+    margin-right: 50px;
+}
+
+.AMDes1{/*whole text*/
+    width: 300px;
+    height: 100px;
+}
+
+.AMTitle h1{/*title*/
+    margin-top: 20px;
+    color: #009BA5;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.AMDetails{/*details*/
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 25px;
+}
+.AMDetails ul li{/*list items*/
+    color: #121212;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.AMDetails ul li span{
+    color: #8A00FF;
+}
+
+/*---------------------------------PART 2------------*/
+.AMTitle2 h1{
+    margin-top: 30px;
+    color: #009BA5;
+    font-size: 300%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+.AMDetails2{/*details*/
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right:25px;
+    justify-content: flex-end;
+}
+.AMDetails2 ul li{/*list items*/
+    color: #121212;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 25px;
+    justify-content: flex-end;
+
+}
+
+.AMDetails2 ul li span{
+    color: #8A00FF;
+}
+
+.AMImageKo2 img{/*image*/
+    width: 500px;
+    height: 350px;
+    border-radius: 2%;
+    margin-right: 40px;
+    margin-bottom: 60px;
+}
+/*--------------------------------Part 3*/
+.AMTitle3 h1{
+    color: #009BA5;
+    font-size: 300%;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 20px; /*adjustment*/
+    margin-left: 180px;
+    display: flex;
+}
+
+.ContentLay3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.AMContentLay3 ul{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+ .AMContentLay3 ul li{/*whole content: text and image*/
+    display: flex;
+    width: 100%;
+}
+
+.AMIcon2 img{/*image*/
+    margin-top: 2px; /*adjustment*/
+    margin-left: 200px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
+    text-decoration: none;
+}
+
+.AMDetails3 ul li{/*details*/
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.AMDetails3 ul li a{
+    color: #8A00FF;
+
+}
+
 }
