@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-
+    <!----------------------------------THE NAVIGATION BOARD-->
+    <header>
         <div class="Nav1">
             <a href="Home.html" class="HomeLink">
                 <div class="HomeLogo">
@@ -18,7 +19,9 @@
             </a>
             <div class="NavBar">
                 <ul>
-                    <li><a href="AboutMe.html">About Me</a></li>
+                    <div class="NavColor">
+                        <li><a href="AboutMe.html">About Me</a></li>
+                    </div>
                     <li><a href="Projects.html">Projects</a></li>
                     <li><a href="Field.html">Field</a></li>
                     <li><a href="Contacts.html">Contacts</a></li>
@@ -26,6 +29,50 @@
             </div>
         </div>
     </header>
-    <p>This is About Me Shai</p>
+
+    <!---------------------Content------------------>
+    <!--TITLEEE-->
+    <div class="ContCon">
+        <div class="ConTitle">
+            <h1>Do you want to work with me?</h1>
+            <h3>Put your details down below:</h3>
+        </div>
+    <!--FORM---->
+        <div class="container">
+            <form id="myForm">
+                <!--DATE-->
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <!--NAME-->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <!--EMAIL-->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <!--PHONE-->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <!--MESSAGE-->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <!--TEXT AREAAA-->
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <!--SUBMIT BUTTOM-->
+                <button type="button" onclick="submitForm()">Submit</button>
+           
+            </form>
+        </div>
+
+    </div>
+
 </body>
 </html>

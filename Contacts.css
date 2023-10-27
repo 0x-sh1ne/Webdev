@@ -8,56 +8,148 @@
 
 body{
     background-color: #f2f2f2 important!;
+
 }
 
-/*WHOLE: NAVIGATION BOARD----------------*/
-.Nav1{
-    display:flex;
-}
+@media screen and (min-width: 0px){
+    /*WHOLE: NAVIGATION BOARD----------------*/
+    .Nav1{
+        display:flex;
+    }
+    
+    /*LEFT NAVIGATION BOARD*/
+    .HomeLogo{
+        display: flex;
+        padding: 25px 25px;
+        font-size: 25px;
+    }
+    /*HOVER:LEFT: NAVIGATION BOARD*/
+    .HomeLink {
+        color: initial;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    .HomeLink :hover{
+        color: #8A00FF;
+    }
+    
+    /*RIGHT: NAVIGATION*/
+    .NavBar{ /*container*/
+        display: flex;
+        padding: 25px 25px;
+        margin-left: auto;
+    }
+    
+    .NavBar ul{ /*list*/
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+    }
+    
+    .NavBar ul li{/*list items*/
+        display: flex;
+        padding: 0 20px;
+        font-size: 25px;
+    }
+    
+    .NavColor li a{
+        color: #8A00FF;
+        text-decoration: underline color( 136 136 136);
+    }
+    
+    /*HOVER: RIGHT: NAIGATION BOARD*/
+    .NavBar ul li a{
+        color: initial;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    .NavBar ul li a:hover{
+        color: #8A00FF
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+    }
 
-/*LEFT NAVIGATION BOARD*/
-.HomeLogo{
-    display: flex;
-    padding: 25px 25px;
-    font-size: 25px;
-}
-/*HOVER:LEFT: NAVIGATION BOARD*/
-.HomeLink {
-    color: initial;
-    text-decoration: none;
-    transition: color 0.2s;
-}
+    /* -------------------------------PART 1 */
+/* TITLEEEEEEEE */
+    .ConTitle h1{
+        color: #009BA5;
+        font-size: 250%;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 100px;
+        margin-left: 50px;
+        display: flex;
+    }
+    .ConTitle h3{
+        color: #8A00FF;
+        font-size: 150%;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-left: 50px;
+        display: flex;
+    }
+/* CONTAINERRRRRR */
+    .container {
+        max-width: 400px;
+        margin-left: 50px;
+    }
+/* FORMMMMM */
+    form {
+        padding: 20px;
+        border-radius: 5px;
+    }
+/* FORM GROUP LIST GANUN */
+    .form-group {
+        margin-bottom: 10px;
+    }
+/* NAME OR LABEL */
+    label {
+        display: block;
+        font-weight: bold;
+    }
 
-.HomeLink :hover{
-    color: #8A00FF;
-}
+/* FOR INPUTS */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea { 
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 
-/*RIGHT: NAVIGATION*/
-.NavBar{ /*container*/
-    display: flex;
-    padding: 25px 25px;
-    margin-left: auto;
-}
+/* FOR DATE */
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    textarea {
+        height: 100px;
+    }
 
-.NavBar ul{ /*list*/
-    display: flex;
-    list-style: none;
-    margin-right: 20px;
-}
+/* FOR BUTTON */
+    button {
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #555;
+    }
 
-.NavBar ul li{/*list items*/
-    display: flex;
-    padding: 0 20px;
-    font-size: 25px;
-}
-
-/*HOVER: RIGHT: NAIGATION BOARD*/
-.NavBar ul li a:{
-    color: initial;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.NavBar ul li a:hover{
-    color: #8A00FF
 }
