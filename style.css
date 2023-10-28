@@ -79,13 +79,13 @@ body{
         display: flex;
     }
     .HomeMyPicture{/*picture*/
-        width: 800px;
+        width: 75%;
         position: fixed;
     }
-    .HomeTextDes{/*text and picture*/
+    .HomeTextDes{/*text */
         font-size: 24px;
-        padding-top: 10%;
-        margin-left: 600px;
+        margin-top: 10%;
+        margin-left: 700px;
     }
 
     .HomeFontShai{/*font picture*/
