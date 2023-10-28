@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Projects.css">
-    <title>Projects✨</title>
+    <title>Project ✨</title>
 </head>
 <body>
+    <!----------------------------------THE NAVIGATION BOARD-->
     <header>
-
         <div class="Nav1">
             <a href="Home.html" class="HomeLink">
                 <div class="HomeLogo">
@@ -18,7 +16,9 @@
             </a>
             <div class="NavBar">
                 <ul>
-                    <li><a href="AboutMe.html">About Me</a></li>
+                    <div class="NavColor">
+                        <li><a href="AboutMe.html">About Me</a></li>
+                    </div>
                     <li><a href="Projects.html">Projects</a></li>
                     <li><a href="Field.html">Field</a></li>
                     <li><a href="Contacts.html">Contacts</a></li>
@@ -26,6 +26,35 @@
             </div>
         </div>
     </header>
-    <p>This is Projects Shai</p>
+
+    <h2>Python: WARD Availability System (WAS)</h2>
+
+    <div class="ProjImages">
+        <img class="ProjImagesjs" src="Images/Projects/PyUiLogIn.png" alt="LogIn">
+        <img class="ProjImagesjs" src="Images/Projects/PyUiBedAdmin.png" alt="Bed Admin">   
+        <img class="ProjImagesjs" src="Images/Projects/PyUiWardAdmin.png" alt="Ward Admin"> 
+        <img class="ProjImagesjs" src="Images/Projects/PyUiUser.png" alt="Patient Bed">    
+        <img class="ProjImagesjs" src="Images/Projects/PyUiWardUser.png" alt="Ward Patient">
+    </div>
+</div>
+
+<!--Create a javascript carousel with the <img> in ProjImages Class-->
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("ProjImagesjs");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}    
+        x[slideIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
 </body>
 </html>

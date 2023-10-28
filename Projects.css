@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Helvetica;
@@ -6,58 +6,99 @@
     text-decoration: none;
 }
 
-body{
-    background-color: #f2f2f2 important!;
+body {
+    background-color: #fff;
 }
 
-/*WHOLE: NAVIGATION BOARD----------------*/
-.Nav1{
-    display:flex;
-}
+@media screen and (min-width: 0px) {
+    /* WHOLE: NAVIGATION BOARD ---------------- */
+    .Nav1 {
+        display: flex;
+    }
 
-/*LEFT NAVIGATION BOARD*/
-.HomeLogo{
-    display: flex;
-    padding: 25px 25px;
-    font-size: 25px;
-}
-/*HOVER:LEFT: NAVIGATION BOARD*/
-.HomeLink {
-    color: initial;
-    text-decoration: none;
-    transition: color 0.2s;
-}
+    /* LEFT NAVIGATION BOARD */
+    .HomeLogo {
+        display: flex;
+        padding: 25px 25px;
+        font-size: 25px;
+    }
 
-.HomeLink :hover{
-    color: #8A00FF;
-}
+    /* HOVER: LEFT: NAVIGATION BOARD */
+    .HomeLink {
+        color: initial;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
 
-/*RIGHT: NAVIGATION*/
-.NavBar{ /*container*/
-    display: flex;
-    padding: 25px 25px;
-    margin-left: auto;
-}
+    .HomeLink:hover {
+        color: #8A00FF;
+    }
 
-.NavBar ul{ /*list*/
-    display: flex;
-    list-style: none;
-    margin-right: 20px;
-}
+    /* RIGHT NAVIGATION */
+    .NavBar { /* container */
+        display: flex;
+        padding: 25px 25px;
+        margin-left: auto;
+    }
 
-.NavBar ul li{/*list items*/
-    display: flex;
-    padding: 0 20px;
-    font-size: 25px;
-}
+    .NavBar ul { /* list */
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+    }
 
-/*HOVER: RIGHT: NAIGATION BOARD*/
-.NavBar ul li a:{
-    color: initial;
-    text-decoration: none;
-    transition: color 0.2s;
-}
+    .NavBar ul li { /* list items */
+        display: flex;
+        padding: 0 20px;
+        font-size: 25px;
+    }
 
-.NavBar ul li a:hover{
-    color: #8A00FF
+    /* Color and border for navigation items */
+    .NavColor {
+        color: black;
+        border-bottom: 2px solid transparent; /* Initially transparent */
+        transition: border-color 0.2s; /* Add a transition for the border color */
+    }
+
+    /* HOVER: RIGHT: NAVIGATION BOARD */
+    .NavBar ul li a {
+        color: initial;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    /* Add border color change on hover */
+    .NavBar ul li a:hover {
+        color: #8A00FF;
+        border-color: #8A00FF; /* Change the border color on hover */
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+    }
+
+    h2{
+        margin-top: 150px;
+        margin-left: 100px;
+        font-size: 50px;
+        text-align: center;
+        color: #009BA5;
+        border-color: grey;
+        border-radius: 50px;
+    }
+
+    .ProjImages{
+        padding: 2%;    
+        margin-left: 500px;
+    }
+
+
+    .ProjImagesjs{
+        display: none;
+    }
 }
