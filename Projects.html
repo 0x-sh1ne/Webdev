@@ -17,9 +17,7 @@
             </a>
             <div class="NavBar">
                 <ul>
-                    <div class="NavColor">
-                        <li><a href="AboutMe.html">About Me</a></li>
-                    </div>
+                    <li><a href="AboutMe.html">About Me</a></li>
                     <li><a href="Projects.html">Projects</a></li>
                     <li><a href="Field.html">Field</a></li>
                     <li><a href="Contacts.html">Contacts</a></li>
@@ -28,34 +26,54 @@
         </div>
     </header>
 
-    <h2>Python: WARD Availability System (WAS)</h2>
+    <div class="CarContainer">
+        <!--PYTHON-->
+        <h2>Python: WARD Availability System (WAS)</h2>
+        <div class="ProjImages">
+            <img class="ProjImagesjs" src="Images/Projects/PyUiLogIn.png" alt="LogIn">
+            <img class="ProjImagesjs" src="Images/Projects/PyUiBedAdmin.png" alt="Bed Admin">   
+            <img class="ProjImagesjs" src="Images/Projects/PyUiWardAdmin.png" alt="Ward Admin"> 
+            <img class="ProjImagesjs" src="Images/Projects/PyUiUser.png" alt="Patient Bed">    
+            <img class="ProjImagesjs" src="Images/Projects/PyUiWardUser.png" alt="Ward Patient">
+        </div>
 
-    <div class="ProjImages">
-        <img class="ProjImagesjs" src="Images/Projects/PyUiLogIn.png" alt="LogIn">
-        <img class="ProjImagesjs" src="Images/Projects/PyUiBedAdmin.png" alt="Bed Admin">   
-        <img class="ProjImagesjs" src="Images/Projects/PyUiWardAdmin.png" alt="Ward Admin"> 
-        <img class="ProjImagesjs" src="Images/Projects/PyUiUser.png" alt="Patient Bed">    
-        <img class="ProjImagesjs" src="Images/Projects/PyUiWardUser.png" alt="Ward Patient">
+        <!--C LANGUAGE-->
+        <h2>C Language: Budget Allocation System</h2>
+        <div class="ProjImages2">
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/Allocation Error.png">
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/Budget Allocation.png">  
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/BudgetAllocated.png"> 
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/BudgetScheme.png">    
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/ErrorImages.png"> 
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/PopUpMessage.png">    
+            <img class="ProjImagesjs2" src="Images/Projects/BudgetAllocation/SummaryReport.png">
+        </div>
     </div>
-</div>
 
-<!--Create a javascript carousel with the <img> in ProjImages Class-->
+<!-----------------------------------------------JAVASCRIPT-->
 <script>
     var slideIndex = 0;
-    carousel();
 
-    function carousel() {
+    carousel("ProjImagesjs");
+    carousel("ProjImagesjs2");
+
+    function carousel(className) {
         var i;
-        var x = document.getElementsByClassName("ProjImagesjs");
+        var x = document.getElementsByClassName(className);
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
         }
         slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}    
-        x[slideIndex-1].style.display = "block";  
-        setTimeout(carousel, 2000); // Change image every 2 seconds
+        if (slideIndex > x.length) {
+            slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(function () {
+            carousel(className);
+        }, 2000); // Change image every 2 seconds
     }
 </script>
+
 
 </body>
 </html>

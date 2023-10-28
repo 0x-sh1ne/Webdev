@@ -38,5 +38,36 @@
             </div>
         </div>
     </header>
+
+    <!--------------------------------------------------JAVASCRIPT -->
+    <script>
+        window.onload = function() {
+            const homeTextDes = document.querySelector('.HomeTextDes');
+            const homeMyPicture = document.querySelector('.HomeMyPicture');
+            const background = document.querySelector('body');
+
+            homeTextDes.style.opacity = 0;
+            homeMyPicture.style.opacity = 0;
+            background.style.opacity = 0;
+
+            let fadeIn = function(element) {
+                let op = 0.1;
+                element.style.display = 'block';
+                let timer = setInterval(function() {
+                    if (op >= 1) {
+                        clearInterval(timer);
+                    }
+                    element.style.opacity = op;
+                    element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                    op += op * 0.1;
+                }, 50);
+            };
+
+            fadeIn(homeTextDes);
+            fadeIn(homeMyPicture);
+            fadeIn(background);
+        };
+    </script>
+    
 </body>
 </html>
