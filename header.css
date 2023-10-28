@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #f2f2f2 important!;
+    background-color: #fff;
 
 }
 
@@ -20,8 +20,8 @@ body{
 /*LEFT NAVIGATION BOARD*/
 .HomeLogo{
     display: flex;
-    padding: 25px 25px;
-    font-size: 25px;
+    padding: 20px 20px;
+    font-size: 20px;
 }
 /*HOVER:LEFT: NAVIGATION BOARD*/
 .HomeLink {
@@ -37,7 +37,7 @@ body{
 /*RIGHT: NAVIGATION*/
 .NavBar{ /*container*/
     display: flex;
-    padding: 25px 25px;
+    padding: 20px 20px;
     margin-left: auto;
 }
 
@@ -49,8 +49,8 @@ body{
 
 .NavBar ul li{/*list items*/
     display: flex;
-    padding: 0 20px;
-    font-size: 25px;
+    padding: 0 15px;
+    font-size: 20px;
 }
 
 .NavColor li a{

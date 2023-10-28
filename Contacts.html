@@ -6,7 +6,6 @@
     <title>Contacts✨</title>
 </head>
 <body>
-    <header>
     <!----------------------------------THE NAVIGATION BOARD-->
     <header>
         <div class="Nav1">
@@ -18,9 +17,7 @@
             </a>
             <div class="NavBar">
                 <ul>
-                    <div class="NavColor">
-                        <li><a href="AboutMe.html">About Me</a></li>
-                    </div>
+                    <li><a href="AboutMe.html">About Me</a></li>
                     <li><a href="Projects.html">Projects</a></li>
                     <li><a href="Field.html">Field</a></li>
                     <li><a href="Contacts.html">Contacts</a></li>
@@ -66,12 +63,33 @@
                     <textarea id="message" name="message"></textarea>
                 </div>
                 <!--SUBMIT BUTTOM-->
-                <button type="button" onclick="submitForm()">Submit</button>
-           
+                <button type="button" onclick="submitForm()">Send</button>
+
             </form>
         </div>
-
     </div>
+
+
+<!-------------POP UP MESSAGE FOR SUBMIT---------------------->
+    <div class="overlay" id="overlay"> </div>
+    <div class="message-box" id="messageBox">
+        <h2>Thank you!!! ✨</h2>
+        <p>I will contact you as soon as possible.</p>
+        <button onclick="closMB()">Close</button>
+    </div>
+
+
+<!------------------------JAVASCRIPT--------------------------->
+    <script>
+        function submitForm() {
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("messageBox").style.display = "block";
+        }
+        function closMB() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("messageBox").style.display = "none";
+        }
+    </script>
 
 </body>
 </html>

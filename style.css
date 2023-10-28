@@ -21,8 +21,8 @@ body{
     /*LEFT NAVIGATION BOARD*/
     .HomeLogo{
         display: flex;
-        padding: 25px 25px;
-        font-size: 25px;
+        padding: 19px 19px;
+        font-size: 18px;
     }
     /*HOVER:LEFT: NAVIGATION BOARD*/
     .HomeLink {
@@ -38,20 +38,20 @@ body{
     /*RIGHT: NAVIGATION*/
     .NavBar{ /*container*/
         display: flex;
-        padding: 25px 25px;
+        padding: 19px 19px;
         margin-left: auto;
     }
     
     .NavBar ul{ /*list*/
         display: flex;
         list-style: none;
-        margin-right: 20px;
+        margin-right: 21px;
     }
     
     .NavBar ul li{/*list items*/
         display: flex;
-        padding: 0 20px;
-        font-size: 25px;
+        padding: 0 13px;
+        font-size: 18px;
     }
     
     /*HOVER: RIGHT: NAIGATION BOARD*/
